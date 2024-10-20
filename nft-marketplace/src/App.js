@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import './styles/globals.css';
-import { Tabs, TabsList, TabsTrigger, TabsContent } from './components/ui/tabs';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from './components/ui/card';
-import { Button } from './components/ui/button';
-import { Input } from './components/ui/input';
-import { Wallet, CreditCard, Send, Flame, Home, Folder, ShoppingBag } from 'lucide-react';
-import { connectWallet, getAccount, getBalance } from './services/ethereumService';
-import { connectTezosWallet, getTezosAccount, getTezosBalance } from './services/tezosService';
-import { mintMeme, transferMeme, burnMeme } from './components/nftService';
-import HomePage from './pages/home';
-import MarketplacePage from './pages/Marketplace';
-import MyCollectionPage from './pages/MyCollection';
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "./components/ui/tabs"
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "./components/ui/card"
+import { Button } from "./components/ui/button"
+import { Input } from "./components/ui/input"
+import { Wallet, CreditCard, Send, Flame, Home, Folder, ShoppingBag } from 'lucide-react'
+
+// Assume these functions are imported from your existing services
+import { connectWallet, getAccount, getBalance } from './services/ethereumService'
+import { connectTezosWallet, getTezosAccount, getTezosBalance } from './services/tezosService'
+import {mintNFT, transferNFT, burnNFT} from "./components/nftService"
+// Import your existing pages
+import HomePage from './pages/home'
+import MarketplacePage from './pages/Marketplace'
+import MyCollectionPage from './pages/MyCollection'
 
 export default function AppLayout() {
   const [activeTab, setActiveTab] = useState('home');
