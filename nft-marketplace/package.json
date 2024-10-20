@@ -7,6 +7,8 @@
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@openzeppelin/contracts": "^5.1.0",
+    "@radix-ui/react-primitive": "^2.0.0",
+    "@radix-ui/react-slot": "^1.1.0",
     "@radix-ui/react-tabs": "^1.1.1",
     "@tailwindcss/postcss7-compat": "^2.2.17",
     "@taquito/beacon-wallet": "^20.1.0",
@@ -54,21 +56,20 @@
   },
   "devDependencies": {
     "assert": "^2.1.0",
-    
+    "autoprefixer": "^10.4.14",
     "browserify-zlib": "^0.2.0",
     "buffer": "^6.0.3",
     "cross-env": "^7.0.3",
     "crypto-browserify": "^3.12.0",
     "https-browserify": "^1.0.0",
     "os-browserify": "^0.3.0",
+    "postcss": "^8.4.24",
     "postcss-flexbugs-fixes": "^5.0.2",
     "process": "^0.11.10",
     "react-app-rewired": "^2.2.1",
     "stream-browserify": "^3.0.0",
     "stream-http": "^3.2.0",
-    "autoprefixer": "^10.4.14",
-  "postcss": "^8.4.24",
-  "tailwindcss": "^3.3.2",
+    "tailwindcss": "^3.3.2",
     "url": "^0.11.4"
   }
 }

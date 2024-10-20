@@ -1,7 +1,7 @@
 // src/pages/Home.js
 import React from 'react';
 import { Container, Title } from '../styles';
-
+  
 const Home = () => {
   return (
     <Container>
@@ -12,3 +12,4 @@ const Home = () => {
 };
 
 export default Home;
+  
