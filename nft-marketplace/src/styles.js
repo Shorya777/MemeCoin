@@ -2,14 +2,23 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;  /* Set to half of the screen height */
+  text-align: center;
+  overflow: hidden; /* Prevents overflow */
 `;
 
 export const Title = styled.h1`
-  font-size: 2.5rem;
-  margin: 20px 0;
+  font-weight: bold; // or you can use 700
+  font-size: 2rem; // adjust as needed
+`;
+
+export const Subtitle = styled.p`
+  font-weight: 600; // a bit bolder than normal text
+  font-size: 1.5rem; // adjust size as needed
 `;
 
 export const Button = styled.button`

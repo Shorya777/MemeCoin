@@ -18,6 +18,11 @@ export default function IPFSUpload() {
 
   // Upload file to IPFS
   const handleFileUpload = async () => {
+    if (!file) {
+      alert('Please select a file to upload.');
+      return;
+    }
+  
     try {
       const added = await client.add(file);
       const url = `https://ipfs.infura.io/ipfs/${added.path}`;
